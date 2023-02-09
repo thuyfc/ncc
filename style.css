@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  font-family: Roboto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 150px;
+}
+
+.menu-item {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #5c5c5c;
+}
+
+.menu-item > a {
+  display: block;
+  height: 100%;
+  padding-left: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.menu-item > a:hover {
+  background-color: #5c5c5c;
+  color: #ffffff;
+}
+
+.menu-item-active > a {
+  color: #ffffff;
+}
+
+.main {
+  height: auto;
+  width: calc(100% - 150px);
+}
+
+.main-top {
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 79px);
+}
+
+.content {
+  max-width: 1510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-header {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header > img {
+  margin-top: 20px;
+  max-width: 310px;
+  height: 122px;
+}
+
+.summary {
+  max-width: 100%;
+  height: auto;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-title {
+  padding-top: 38px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.summary-content {
+  padding-top: 18px;
+  padding-bottom: 38px;
+  padding: 18px 269px 38px 269px;
+  max-width: 100%;
+  min-height: 95px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.text-items {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-icon {
+  width: 470px;
+  height: 252px;
+}
+
+.text-icons {
+  float: left;
+  padding-right: 18px;
+}
+.text-align {
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 18px;
+  /* width: 326px;
+  height: 113px; */
+}
+
+.main-bottom {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-bottom > div {
+  max-width: 1510px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1700px) {
+  .text-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .main-bottom > div {
+    justify-content: center;
+  }
+}
